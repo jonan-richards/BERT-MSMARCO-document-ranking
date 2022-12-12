@@ -1,0 +1,11 @@
+__pycache__
+
+data/output/*
+model/BERT_Base_trained_on_MSMARCO/*
+
+anserini
+data/msmarco_passage/*
+
+data/msmarco_doc/*
+!data/msmarco_doc/query-ids-dev-test.tsv
+!data/msmarco_doc/query-ids-dev-validation.tsv
