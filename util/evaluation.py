@@ -35,6 +35,8 @@ def aggregate_results(input_path, output_path, aggr_method, normalize=False):
         aggregate = lambda a, b: a + b
     elif aggr_method == 'max':
         aggregate = lambda a, b: max(a, b)
+    elif aggr_method == 'first':
+        aggregate = lambda a, b: a
 
     aggr_scores = aggregate_scores(aggregate)
 
